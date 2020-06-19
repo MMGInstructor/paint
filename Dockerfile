@@ -1,4 +1,4 @@
-FROM registry.redhat.io/rhscl/httpd-24-rhel7
+FROM registry.access.redhat.com/rhscl/httpd-24-rhel7
 MAINTAINER Marta marmarti@redhat.com
 RUN yum update -y && yum install httpd && yum clean all
 
