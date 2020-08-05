@@ -4,7 +4,7 @@ MAINTAINER Marta marmarti@redhat.com
 
 USER root
 
-RUN yum update -y && yum install httpd -y && yum clean all -y
+RUN yum update -y && yum install httpd -y && yum clean all 
 
 COPY index.html flow.js main.js perlin.js utils.js /var/www/html/
 
