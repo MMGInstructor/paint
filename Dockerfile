@@ -1,6 +1,6 @@
 FROM registry.access.redhat.com/rhscl/httpd-24-rhel7
 MAINTAINER Marta marmarti@redhat.com
-RUN yum update -y && yum install httpd && yum clean all
+RUN yum update -y && yum install httpd -y && yum clean all -y
 
 COPY index.html flow.js main.js perlin.js utils.js /opt/app-root/src
 
