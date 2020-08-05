@@ -1,11 +1,12 @@
 FROM registry.access.redhat.com/ubi7/ubi
+
 MAINTAINER Marta marmarti@redhat.com
 
 USER root
 
 RUN yum update -y && yum install httpd -y && yum clean all -y
 
-COPY index.html flow.js main.js perlin.js utils.js /opt/app-root/src
+COPY index.html flow.js main.js perlin.js utils.js /var/www/html/
 
 EXPOSE 8080
 
