@@ -1,7 +1,7 @@
 FROM registry.access.redhat.com/ubi7/ubi
 MAINTAINER Marta marmarti@redhat.com
 
-# USER root
+USER root
 
 RUN yum update -y && yum install httpd -y && yum clean all -y
 
